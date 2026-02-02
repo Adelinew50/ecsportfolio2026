@@ -2,6 +2,7 @@
 /* This is a comment! Text here will be ignored by the browser. */
 body {
 	margin: 0 auto;
+	ont: 100%/1.4 Optima, sans-serif;
 }
 .homePage {
 	background: #222222;
