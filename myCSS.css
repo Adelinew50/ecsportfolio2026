@@ -5,7 +5,7 @@ body {
 	ont: 100%/1.4 Optima, sans-serif;
 }
 .homePage {
-	background: #222222;
+	background: #fea601;
 }
 .container {
 	width: 960px;
@@ -22,7 +22,7 @@ body {
 	
 }
 .nav {
-	background: #FFB931;
+	background: #72888c;
 	margin: 0px;
 	padding: 5;
 	float: left;
