@@ -28,7 +28,7 @@
 	  <img src="../images/game.png">
 	  <li>This is my game! The player is the Icecream and can move with WASD keys. The goal is to get the cookie to gain points but the challenge is that the cookie shrinks throughout the game.If the cookie dissapears, the icecream store closes and you loose.</li>
 
-<a href="../images/game.pde">Game Project</a>
+<a href="../images/game.pde">Game Mini-Project</a>
 	  
 	  <h3>Certifications</h3>
 	  <ol>
@@ -36,7 +36,44 @@
   	
 </ol>
 	  
-	  </div>
+	  </div>// Adeline Wright 
+float posX, posY;
+color creatureColor = color(0, 200, 255); // Starting color (Blue)
+
+void setup() {
+  size(600, 600);
+  posX = width / 2;
+  posY = height / 2;
+  noStroke();
+}
+
+void draw() {
+  background(30);
+
+  // Simple motion: 5% movement toward the mouse per frame
+  posX = lerp(posX, mouseX, 0.05);
+  posY = lerp(posY, mouseY, 0.05);
+
+  // Draw the creature
+  fill(creatureColor);
+  ellipse(posX, posY, 60, 60);
+}
+
+// Change color when mouse is clicked
+void mousePressed() {
+  changeColor();
+}
+
+// Change color when any key is pressed
+void keyPressed() {
+  changeColor();
+}
+
+// Function to pick a new random color
+void changeColor() {
+  creatureColor = color(random(255), random(255), random(255));
+}
+
   <div class="footer">
     <h4> <a href="../aboutme.html">About Me</a> | <a href="mailto: 425240@graniteschools.org">Contact</a> | Copyright 2021</h4>
   </div>
